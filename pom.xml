@@ -21,6 +21,8 @@
         <framework-mysql.version>0.0.1-SNAPSHOT</framework-mysql.version>
         <framework-redis.version>0.0.1-SNAPSHOT</framework-redis.version>
         <framework-kafka.version>0.0.1-SNAPSHOT</framework-kafka.version>
+
+        <mpt-system.version>0.0.1-SNAPSHOT</mpt-system.version>
     </properties>
 
     <dependencies>
@@ -57,12 +59,10 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
         <!-- 缓存 -->
         <dependency>
@@ -83,6 +83,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- 管理后台系统接口 -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.mpt</groupId>
+                <artifactId>system-api</artifactId>
+                <version>${mpt-system.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
