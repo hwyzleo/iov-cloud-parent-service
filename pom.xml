@@ -22,6 +22,8 @@
         <framework-redis.version>0.0.1-SNAPSHOT</framework-redis.version>
         <framework-kafka.version>0.0.1-SNAPSHOT</framework-kafka.version>
 
+        <tsp-account.version>0.0.1-SNAPSHOT</tsp-account.version>
+
         <mpt-system.version>0.0.1-SNAPSHOT</mpt-system.version>
     </properties>
 
@@ -101,7 +103,14 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- 管理后台系统接口 -->
+            <!-- TSP相关接口 -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.tsp</groupId>
+                <artifactId>account-api</artifactId>
+                <version>${tsp-account.version}</version>
+            </dependency>
+
+            <!-- MPT相关接口 -->
             <dependency>
                 <groupId>net.hwyz.iov.cloud.mpt</groupId>
                 <artifactId>system-api</artifactId>
