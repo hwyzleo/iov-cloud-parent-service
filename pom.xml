@@ -141,7 +141,13 @@
                     <execution>
                         <goals>
                             <goal>repackage</goal>
+                            <goal>build-info</goal>
                         </goals>
+                        <configuration>
+                            <additionalProperties>
+                                <jenkins.buildNumber>${env.BUILD_NUMBER}</jenkins.buildNumber>
+                            </additionalProperties>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
