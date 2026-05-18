@@ -16,6 +16,8 @@
     <name>service</name>
 
     <properties>
+        <tsp.version>0.0.1-SNAPSHOT</tsp.version>
+        <vmd.version>0.0.1-SNAPSHOT</vmd.version>
     </properties>
 
     <dependencies>
@@ -106,6 +108,18 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- 模块：TSP -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.iov</groupId>
+                <artifactId>iov-tsp-api</artifactId>
+                <version>${tsp.version}</version>
+            </dependency>
+            <!-- 模块：VMD -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.edd</groupId>
+                <artifactId>edd-vmd-api</artifactId>
+                <version>${vmd.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
