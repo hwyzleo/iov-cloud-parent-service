@@ -19,6 +19,7 @@
         <tsp.version>0.0.1-SNAPSHOT</tsp.version>
         <vmd.version>0.0.1-SNAPSHOT</vmd.version>
         <idk.version>0.0.1-SNAPSHOT</idk.version>
+        <ota.version>0.0.1-SNAPSHOT</ota.version>
     </properties>
 
     <dependencies>
@@ -120,6 +121,12 @@
                 <groupId>net.hwyz.iov.cloud.iov</groupId>
                 <artifactId>iov-idk-api</artifactId>
                 <version>${idk.version}</version>
+            </dependency>
+            <!-- 模块：OTA -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.iov</groupId>
+                <artifactId>iov-ota-api</artifactId>
+                <version>${ota.version}</version>
             </dependency>
             <!-- 模块：VMD -->
             <dependency>
