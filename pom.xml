@@ -17,6 +17,7 @@
 
     <properties>
         <tsp.version>0.0.1-SNAPSHOT</tsp.version>
+        <mdm.version>0.0.1-SNAPSHOT</mdm.version>
         <vmd.version>0.0.1-SNAPSHOT</vmd.version>
         <idk.version>0.0.1-SNAPSHOT</idk.version>
         <ota.version>0.0.1-SNAPSHOT</ota.version>
@@ -133,6 +134,12 @@
                 <groupId>net.hwyz.iov.cloud.edd</groupId>
                 <artifactId>edd-vmd-api</artifactId>
                 <version>${vmd.version}</version>
+            </dependency>
+            <!-- 模块：MDM -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.edd</groupId>
+                <artifactId>edd-mdm-api</artifactId>
+                <version>${mdm.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
