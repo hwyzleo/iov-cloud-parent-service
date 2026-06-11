@@ -21,6 +21,7 @@
         <vmd.version>0.0.1-SNAPSHOT</vmd.version>
         <idk.version>0.0.1-SNAPSHOT</idk.version>
         <ota.version>0.0.1-SNAPSHOT</ota.version>
+        <ccs.version>0.0.1-SNAPSHOT</ccs.version>
         <mpt.version>0.0.1-SNAPSHOT</mpt.version>
     </properties>
 
@@ -129,6 +130,12 @@
                 <groupId>net.hwyz.iov.cloud.iov</groupId>
                 <artifactId>iov-ota-api</artifactId>
                 <version>${ota.version}</version>
+            </dependency>
+            <!-- 模块：CCS -->
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.iov</groupId>
+                <artifactId>iov-ccs-api</artifactId>
+                <version>${ccs.version}</version>
             </dependency>
             <!-- 模块：VMD -->
             <dependency>
